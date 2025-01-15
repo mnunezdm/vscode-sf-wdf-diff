@@ -1,6 +1,6 @@
-# sf-wdf-git-diff README
+# sf-wdf-diff README
 
-This is the README for your extension "sf-wdf-git-diff". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "sf-wdf-diff". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
