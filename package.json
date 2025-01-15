@@ -1,7 +1,7 @@
 {
-  "name": "sf-wdf-diff",
-  "displayName": "sf-wdf-diff",
-  "description": "Overrides git diff for salesforce dataflow (wdf) files",
+  "name": "vscode-sf-wdf-diff",
+  "displayName": "VSCODE Salesforce WDF Diff",
+  "description": "Diff for Salesforce dataflow (wdf) files",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
@@ -14,8 +14,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "sf-wdf-diff.gitDiffComplete",
-        "title": "SFX: Diff WDF"
+        "command": "sf-wdf-diff.diffComplete",
+        "title": "SF CRM A: Diff WDF between refs"
+      },
+      {
+        "command": "sf-wdf-diff.diffActual",
+        "title": "SF CRM A: Diff WDF with actual"
+      },
+      {
+        "command": "sf-wdf-diff.diffPrevious",
+        "title": "SF CRM A: Diff WDF with previous"
+      },
+      {
+        "command": "sf-wdf-diff.diffCurrent",
+        "title": "SF CRM A: Diff WDF with current with reference"
       }
     ]
   },
