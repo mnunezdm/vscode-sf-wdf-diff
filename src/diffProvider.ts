@@ -36,7 +36,9 @@ export class DiffProvider implements vscode.TextDocumentContentProvider {
 
   private parseJsonArray(jsonArrayString: string): object {
     const dataflowMetadata: string[] = JSON.parse(jsonArrayString)
-    const nonNullNode = dataflowMetadata.filter(Boolean)[0]
+    const nonNullNode = dataflowMetadata.filter(
+      (data) => Boolean(data) && data !== '{}',
+    )[0]
     return JSON.parse(nonNullNode)
   }
 }
