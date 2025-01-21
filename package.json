@@ -33,7 +33,31 @@
         "command": "sf-wdf-diff.diffCurrent",
         "title": "SF CRM A: Diff WDF with current with reference"
       }
-    ]
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "when": "resourceExtname == .wdf",
+          "group": "3_compare",
+          "command": "sf-wdf-diff.diffComplete"
+        },
+        {
+          "when": "resourceExtname == .wdf",
+          "group": "3_compare",
+          "command": "sf-wdf-diff.diffActual"
+        },
+        {
+          "when": "resourceExtname == .wdf",
+          "group": "3_compare",
+          "command": "sf-wdf-diff.diffPrevious"
+        },
+        {
+          "when": "resourceExtname == .wdf",
+          "group": "3_compare",
+          "command": "sf-wdf-diff.diffCurrent"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
