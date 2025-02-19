@@ -1,8 +1,8 @@
 {
   "name": "vscode-sf-wdf-diff",
-  "displayName": "VSCODE Salesforce WDF Diff",
+  "displayName": "Salesforce WDF Diff",
   "description": "Diff for Salesforce dataflow (wdf) files",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.96.0"
   },
